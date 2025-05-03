@@ -14,7 +14,11 @@ double Account::getBalance() const {
     return balance;
 }
 
-void Account::print(std::ostream& os) const {
+void Account::setBalance(double b) {
+    balance = b;
+}
+
+void Account::print(ostream& os) const {
     os << "Account Balance: " << balance;
 }
 
@@ -26,7 +30,7 @@ bool Account::operator==(const Account& other) const {
     return (balance == other.balance);
 }
 
-ostream& operator<<(std::ostream& os, const Account& account) {
+ostream& operator<<(ostream& os, const Account& account) {
     account.print(os);
     return os;
 }

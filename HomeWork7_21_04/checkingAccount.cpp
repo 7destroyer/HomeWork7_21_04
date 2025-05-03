@@ -6,6 +6,6 @@ void CheckingAccount::applyFee() {
     balance -= fee;
 }
 
-void CheckingAccount::print(std::ostream& os) const override {
+void CheckingAccount::print(std::ostream& os) const {
     os << "Checking Account Balance: " << balance << ", Fee: " << fee;
 }

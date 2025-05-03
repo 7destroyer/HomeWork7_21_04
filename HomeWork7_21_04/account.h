@@ -15,6 +15,9 @@ public:
     virtual ~Account();
 
     double getBalance() const;
+
+    void setBalance(double b);
+
     virtual void print(ostream& os) const;
 
     // Перегрузка оператора + (сложение балансов)

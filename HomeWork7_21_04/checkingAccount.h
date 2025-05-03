@@ -2,6 +2,7 @@
 #define CHECKINGACCOUNT_H
 
 #include <iostream>
+#include "account.h"
 
 using namespace std;
 
@@ -14,7 +15,7 @@ public:
 
 	void applyFee();
 
-	void print(std::ostream& os) const override;
+	void print(ostream& os) const override;
 };
 
 #endif
